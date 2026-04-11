@@ -1,0 +1,97 @@
+/* =============================
+   Stats Cards
+============================= */
+
+.dashboard-stats-cards {
+  display: flex;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+
+/* الكارت */
+
+.dashboard-stat-card {
+  flex: 1; 
+  min-width: 0;
+
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* الايقونة */
+
+.dashboard-stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  /* margin-bottom: 10px; */
+}
+
+/* العنوان */
+
+.dashboard-stat-title {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+
+/* الصف اللي فيه الرقم والنسبة */
+
+.dashboard-stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 5px; */
+}
+
+/* الرقم */
+
+.dashboard-stat-value {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+}
+
+/* النسبة */
+
+.dashboard-stat-percent {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.dashboard-stat-percent.up {
+  color: var(--color-success);
+}
+
+.dashboard-stat-percent.down {
+  color: var(--color-danger);
+}
+
+/* progress bar */
+
+.dashboard-stat-bar {
+  height: 4px;
+  background: var(--color-border-light);
+  border-radius: var(--radius-pill);
+  margin-top: var(--space-sm);
+}
+
+.dashboard-stat-progress {
+  height: 100%;
+  width: 70%;
+  border-radius: var(--radius-pill);
+}

@@ -1,0 +1,31 @@
+/* الصفحة كلها */
+.live-tracking-page {
+  padding: 20px 40px;
+}
+
+/* Layout الصفحة */
+.live-tracking-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  max-width: 1200px; 
+}
+
+/* الشمال */
+.live-tracking-left-panel {
+  width: 340px;
+  flex-shrink: 0;
+}
+
+/* اليمين (الماب) */
+.live-tracking-right-panel {
+  flex: 1;
+  height: 600px;
+  min-width: 400px;
+}
+
+/* الماب */
+.live-tracking-map-container {
+  height: 100%;
+  width: 100%;
+}

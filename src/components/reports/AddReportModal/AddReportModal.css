@@ -1,0 +1,143 @@
+/* overlay */
+.add-report-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+}
+
+/* modal */
+.add-report-modal {
+    width: 600px;
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+/* back */
+.add-report-back {
+    font-size: 12px;
+    color: #64748b;
+    cursor: pointer;
+}
+
+/* title */
+.add-report-title {
+    margin-top: 10px;
+}
+
+.add-report-sub {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+/* form box */
+.add-report-form {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+/* group */
+.add-report-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.add-report-group label {
+    font-size: 12px;
+    color: #334155;
+}
+
+/* inputs */
+.add-report-input {
+    width: 525px;
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+    background: #e2e8f0;
+    font-size: 13px;
+    outline: none;
+}
+
+.add-report-date {
+    width: 259px;
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+    background: #e2e8f0;
+    font-size: 13px;
+    outline: none;
+}
+
+/* select */
+.add-report-select {
+    width: 525px;
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+    background: #e2e8f0;
+    font-size: 13px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* row */
+.add-report-row {
+    display: flex;
+    gap: 10px;
+}
+
+/* buttons */
+.add-report-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* cancel */
+.add-report-cancel-btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+
+    border: 1.5px solid #94a3b8;
+    background: white;
+
+    cursor: pointer;
+}
+
+/* save */
+.add-report-save-btn {
+    flex: 1;
+    padding: 8px;
+    border-radius: 12px;
+
+    border: none;
+    cursor: pointer;
+
+    color: white;
+
+    background: linear-gradient(90deg, #2f4f73, #7aa6c2);
+}
+
+/* hover */
+.add-report-save-btn:hover {
+    opacity: 0.9;
+}
+
+.add-report-cancel-btn:hover {
+    background: #f1f5f9;
+}
+.add-report-error{
+    color: red;
+    font-size: 10px;
+}

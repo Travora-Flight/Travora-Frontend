@@ -1,0 +1,9 @@
+.live-map-container {
+  padding: 0; 
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.live-map-map {
+  height: 200px;
+  width: 100%;
+}

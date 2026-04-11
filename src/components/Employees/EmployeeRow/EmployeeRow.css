@@ -1,0 +1,93 @@
+/* ============================= */
+/* 🔹 NAME */
+/* ============================= */
+
+.employees-name-cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.employees-avatar {
+  width: 32px;
+  height: 32px;
+
+  background: var(--color-primary);
+  color: white;
+
+  border-radius: var(--radius-pill);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+}
+
+
+/* ============================= */
+/* 🔹 ACTIONS */
+/* ============================= */
+
+.employees-actions {
+  cursor: pointer;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+
+/* ============================= */
+/* 🔹 DROPDOWN */
+/* ============================= */
+
+.employees-actions-wrapper {
+  position: relative;
+}
+
+.employees-dropdown {
+  position: absolute;
+  right: 0;
+  top: 20px;
+
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: 6px 0;
+
+  box-shadow: var(--shadow-md);
+  min-width: 150px;
+  z-index: 100;
+}
+
+/* item */
+.employees-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 14px;
+  font-size: var(--text-sm);
+  cursor: pointer;
+
+  color: var(--color-text-main);
+  transition: var(--transition-fast);
+}
+
+/* icons */
+.employees-dropdown-item svg {
+  flex-shrink: 0;
+}
+
+/* hover */
+.employees-dropdown-item:hover {
+  background: var(--color-bg-input);
+}
+
+/* success */
+.employees-dropdown-item.success {
+  color: var(--color-success);
+}
+
+/* danger */
+.employees-dropdown-item.danger {
+  color: var(--color-danger);
+}

@@ -1,0 +1,96 @@
+.packages-section {
+  margin-top: 30px;
+}
+
+.packages-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.packages-grid {
+  display: flex;
+}
+
+.package-card {
+  width: 320px;
+  border: 1.5px solid #2f4f73;
+  border-radius: 14px;
+  padding: 16px;
+  background: white;
+}
+
+/* TOP */
+.package-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.package-top h3 {
+  font-size: 15px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.status {
+  background: #dcfce7;
+  color: #16a34a;
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 8px;
+}
+
+/* CODE */
+.package-code {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+/* PRICE BOX */
+.package-price-box {
+  display: flex;
+  justify-content: space-between;
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.package-price-box span {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.package-price-box h4 {
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.discount {
+  color: #16a34a;
+}
+
+/* SERVICES */
+.package-services {
+  margin-top: 12px;
+}
+
+.package-services span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.service-pill {
+  margin-top: 6px;
+  padding: 6px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 12px;
+}
