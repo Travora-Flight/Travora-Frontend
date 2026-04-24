@@ -1,0 +1,101 @@
+.requests {
+  margin-top: 25px;
+}
+
+.requests__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* grid */
+.requests__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* card */
+.requests__card {
+  background: #f9fbfd;
+  border: 1.5px solid #d6e0ea;
+  border-radius: 16px;
+  padding: 20px;
+  position: relative;
+}
+
+/* id */
+.requests__card h4 {
+  margin-bottom: 10px;
+}
+
+/* labels */
+.requests__card p {
+  font-size: 13px;
+  color: #555;
+  margin: 3px 0;
+}
+
+/* button */
+.requests__btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(to right, #2f4b6e, #7fa6c7);
+  color: white;
+  cursor: pointer;
+}
+
+/* new badge */
+.requests__card::after {
+  content: "New";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #d1f5dc;
+  color: #1a7f37;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+/*  TABLET  */
+@media (max-width: 768px) {
+
+  .requests__grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/*  MOBILE  */
+@media (max-width: 480px) {
+
+  .requests__title {
+    font-size: 16px;
+  }
+
+  .requests__card {
+    padding: 16px;
+  }
+
+  .requests__btn {
+    padding: 9px;
+    font-size: 13px;
+  }
+
+}
+
+/*  SMALL MOBILE  */
+@media (max-width: 360px) {
+
+  .requests__card p {
+    font-size: 12px;
+  }
+
+  .requests__btn {
+    font-size: 12px;
+  }
+
+}

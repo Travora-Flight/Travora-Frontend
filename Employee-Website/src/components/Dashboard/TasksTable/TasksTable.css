@@ -1,0 +1,98 @@
+/* container */
+.tasks__container {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* table */
+.tasks__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* header */
+.tasks__table thead {
+  background: #2f4b6e;
+}
+
+.tasks__table th {
+  color: white;
+  padding: 14px;
+  font-size: 13px;
+}
+
+/* rows */
+.tasks__row td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+/* status pill */
+.tasks__status-pill {
+  background: #e0edff;
+  color: #2f6df6;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+/* location */
+.tasks__location {
+  color: #555;
+}
+
+/* button */
+.tasks__btn {
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(to right, #2f4b6e, #5f8fbf);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tasks__btn:hover {
+  opacity: 0.9;
+}
+/*  TABLET  */
+@media (max-width: 768px) {
+
+  .tasks__table th,
+  .tasks__row td {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+}
+
+/*  MOBILE  */
+@media (max-width: 600px) {
+
+  .tasks__container {
+    overflow-x: auto;
+  }
+
+  .tasks__table {
+    min-width: 600px;
+  }
+
+}
+
+/*  SMALL MOBILE  */
+@media (max-width: 400px) {
+
+  .tasks__btn {
+    padding: 5px 12px;
+    font-size: 11px;
+  }
+
+  .tasks__status-pill {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+
+}

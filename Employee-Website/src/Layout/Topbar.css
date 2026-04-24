@@ -1,0 +1,320 @@
+.topbar {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 30px;
+
+  border-bottom: 1px solid #ddd;
+
+  position: relative;
+  z-index: 100;
+}
+
+/* left */
+.topbar__left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.topbar__logo {
+  height: 35px;
+}
+
+.topbar__divider {
+  width: 1px;
+  height: 25px;
+  background: #ccc;
+}
+
+.topbar__welcome {
+  font-weight: 500;
+}
+
+/* right */
+.topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  position: relative;
+}
+
+.topbar__right span {
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+}
+
+/* notif */
+.topbar__notif {
+  position: relative;
+}
+
+/* badge */
+.topbar__badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+
+  background: red;
+  color: white;
+
+  font-size: 10px;
+
+  padding: 3px 6px;
+
+  border-radius: 50%;
+}
+
+/*  NOTIFICATION  */
+
+.notif {
+  position: absolute;
+
+  top: 45px;
+  right: 0;
+
+  width: 340px;
+
+  background: #fff;
+
+  border-radius: 14px;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+
+  z-index: 999;
+}
+
+/* header */
+.notif__header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 15px;
+
+  font-weight: 600;
+
+  border-bottom: 1px solid #eee;
+}
+
+.notif__badge {
+  background: #2f4b6e;
+  color: white;
+
+  font-size: 11px;
+
+  padding: 4px 10px;
+
+  border-radius: 12px;
+}
+
+/* list */
+.notif__item {
+  display: flex;
+  gap: 12px;
+
+  padding: 15px;
+
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.notif__icon {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notif__list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* colors */
+.notif__icon--created {
+  background: #e0f2fe;
+}
+
+.notif__icon--canceled {
+  background: #fee2e2;
+}
+
+.notif__icon--completed {
+  background: #dcfce7;
+}
+
+.notif__icon--rescheduled {
+  background: #e5e7eb;
+}
+
+.notif__title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.notif__message {
+  font-size: 12px;
+  color: #666;
+}
+
+.notif__time {
+  font-size: 11px;
+  color: #999;
+}
+
+/* footer */
+.notif__footer {
+  text-align: center;
+
+  padding: 12px;
+
+  font-size: 13px;
+
+  color: #2f4b6e;
+
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+/*  MOBILE MENU  */
+
+.topbar__menuBtn {
+  display: none;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+
+  color: #2f4b6e;
+}
+
+.topbar__mobileMenu {
+  position: absolute;
+
+  top: 55px;
+  right: 0;
+
+  width: 190px;
+
+  background: white;
+
+  border-radius: 14px;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 9999;
+}
+
+.topbar__mobileMenu span {
+  padding: 14px;
+
+  font-size: 14px;
+
+  border-bottom: 1px solid #f1f1f1;
+
+  cursor: pointer;
+}
+
+.topbar__mobileMenu span:last-child {
+  border-bottom: none;
+}
+
+/* hover */
+.topbar__mobileMenu span:hover {
+  background: #f5f7fb;
+}
+
+/*  TABLET  */
+@media (max-width: 768px) {
+
+  .topbar {
+    padding: 0 15px;
+  }
+
+  .topbar__logo {
+    height: 30px;
+  }
+
+  /* hide desktop nav */
+  .topbar__right>span,
+  .topbar__notif {
+    display: none;
+  }
+
+  /* show menu */
+  .topbar__menuBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topbar__divider {
+    display: none;
+  }
+
+  .topbar__welcome {
+    display: none;
+  }
+
+}
+
+/*  MOBILE  */
+@media (max-width: 480px) {
+
+  .topbar {
+    height: 60px;
+    padding: 0 12px;
+  }
+
+  .topbar__logo {
+    height: 26px;
+  }
+
+  .topbar__mobileMenu {
+    width: 170px;
+    top: 50px;
+  }
+
+  .topbar__right>span,
+  .topbar__notif {
+    display: none;
+  }
+
+}
+
+/*  SMALL MOBILE  */
+@media (max-width: 360px) {
+
+  .topbar__mobileMenu {
+    width: 160px;
+  }
+
+  .topbar__right>span,
+  .topbar__notif {
+    display: none;
+  }
+
+}
