@@ -1,0 +1,132 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+.login-page {
+  min-height: 100vh;  
+  /* background-color: #E5E5E5;  */
+  display: flex;
+  flex-direction: column;  
+  /* justify-content: space-between;  */
+  align-items: center;  
+  /* position: relative;  */
+}
+
+/* الجزء اللي في النص */
+
+.login-content {
+  flex: 1;  
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center; 
+  padding: var(--space-xl);
+}
+
+/* تنسيق اللوجو              */
+
+.login-logo {
+  width: 311.06px;
+  margin-bottom: 50px;  
+  height: 60px;
+  top: 126px;
+  left: 564px;
+
+}
+
+/* كارد تسجيل الدخول         */
+
+.login-card {
+  background-color: var(--color-bg-card);  
+  padding: 20px 30px 16px 30px; 
+  border-radius: var(--radius-xl);  
+  width: 300px; 
+  min-height: 250px;
+  text-align: center; 
+  border: 1px solid var(--color-primary-dark); 
+  /* flex-direction: column;
+  gap: 43px; */
+}
+
+/* تجميع كل label + input */
+
+.login-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin-bottom: 15px;
+  /* angle: 0deg ; */
+  opacity: 1;
+
+}
+
+/* تنسيق النص فوق الخانة */
+
+.login-label {
+  font-weight: 600;
+  font-style: Medium;
+  font-size: var(--text-xs);
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+
+/* عنوان الفورم              */
+
+.login-title {
+  font-size: var(--text-xl);
+  margin-bottom: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* رسالة الخطأ تحت كل خانة */
+.login-field-error {
+  color: var(--color-danger);
+  font-size: var(--text-sm);
+  margin-top: 5px;
+}
+
+/* حقول الإدخال              */
+.login-input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-top:  6px;
+  border: none;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-input-card);
+  outline: none;
+}
+
+/* زر تسجيل الدخول           */
+
+.login-button {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: var(--color-primary-dark);
+  color: white;
+  border: none;  
+  border-radius: var(--radius-lg); 
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+
+/* تأثير عند المرور بالماوس */
+.login-button:hover {
+  opacity: 0.9;
+}
+
+/* الشريط الأزرق السفلي      */
+.login-footer-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--color-primary-madium);
+  /* padding: 1px; */
+}

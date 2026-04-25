@@ -1,0 +1,240 @@
+/* ===== الصفحة ===== */
+.requests-page-container {
+  padding: 20px 50px;
+  background: var(--color-bg-page);
+  min-height: 100vh;
+  font-family: var(--font-family);
+}
+
+.requests-content-wrapper {
+  max-width: 1600px;  
+  margin: 0 auto;      
+}
+
+/* ===== العنوان ===== */
+.requests-page-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text-main);
+  padding-bottom: 10px ;
+}
+
+.requests-subtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: 18px;
+}
+
+/* ===== Search ===== */
+.requests-search-box {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.requests-search-box input {
+  width: 100%;
+  height: 48px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-light);
+  padding-left: 42px;
+  padding-right: 15px;
+  font-size: var(--text-md);
+  background: var(--color-bg-card);
+}
+
+.requests-search-box input::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* icon */
+.requests-search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  opacity: 0.6;
+}
+
+/* ===== Table Container ===== */
+.requests-table-container {
+  max-width: 1600px;
+  margin: auto;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-light);
+  overflow:visible ;
+  box-shadow: var(--shadow-sm);
+}
+
+/* ===== Header ===== */
+.requests-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 18px;
+}
+
+.requests-table-header h3 {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+/* ===== Actions ===== */
+.requests-table-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Filter */
+.requests-filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: var(--color-bg-input);
+  border: none;
+
+  padding: 6px 14px;
+  border-radius: var(--radius-md);
+
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+
+  cursor: pointer;
+}
+.filter-options button {
+  width: 100%;
+
+  margin-top: 10px;
+  padding: 8px 12px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #eef2f7;
+  color: #2f4b6e;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.filter-options button:hover {
+  background: #dbe4ee;
+}
+
+/* Today */
+.requests-today-btn {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+
+  padding: 6px 14px;
+  border-radius: var(--radius-md);
+
+  font-size: var(--text-sm);
+  cursor: pointer;
+}
+
+/* ===== Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header */
+th {
+  background: var(--color-primary);
+  color: white;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  padding: 13px;
+  text-align: left;
+}
+
+/* Rows */
+td {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  padding: 13px;
+}
+
+/* Hover */
+.requests-row-click {
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.requests-row-click:hover {
+  background: var(--color-bg-input);
+}
+
+/* ===== Status ===== */
+.requests-status {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-weight: 500;
+}
+
+/* New */
+.requests-status.New {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+
+/* On Going */
+.requests-status.OnGoing {
+  background: var(--color-info-bg);
+  color: var(--color-info);
+}
+
+/* Completed */
+.requests-status.Completed {
+  background: var(--color-neutral-bg);
+  color: var(--color-neutral-text);
+}
+
+.requests-filter {
+  position: relative;
+}
+
+.requests-filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+
+  padding: 6px 14px;
+  border-radius: 10px;
+
+  font-size: 13px;
+  color: #475569;
+  cursor: pointer;
+}
+
+.requests-filter-btn.active {
+  background: #2f4f73;
+  color: white;
+}
+
+.requests-filter-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+
+  background: white;
+  border-radius: 12px;
+  width: 180px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  z-index: 999;
+}

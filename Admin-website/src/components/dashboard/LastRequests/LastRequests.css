@@ -1,0 +1,165 @@
+/* =============================
+   HEADER
+============================= */
+
+.last-requests-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--color-primary) !important;
+  color: white;
+  padding: var(--space-lg);
+}
+
+.last-requests-header h3 {
+  margin: 0;
+  font-size: var(--text-lg);
+}
+
+.last-requests-header p {
+  margin: 4px 0 0;
+  font-size: var(--text-sm);
+  opacity: 0.8;
+}
+
+.last-requests-view-all {
+  font-size: var(--text-sm);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* =============================
+   TABLE
+============================= */
+
+.last-requests-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-md);
+}
+
+.last-requests-table thead {
+  background-color: var(--color-bg-input);
+}
+
+.last-requests-table th {
+  text-align: left;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  padding: var(--space-md);
+  font-size: var(--text-sm);
+}
+
+.last-requests-table td {
+ padding: var(--space-md);
+  border-top: 1px solid var(--color-border-light);
+}
+
+/* 🔥 صف أبيض وتاني رمادي */
+.last-requests-table tbody tr:nth-child(even) {
+  background: var(--color-bg-page);
+}
+
+/* hover */
+.last-requests-table tbody tr:hover {
+  background: var(--color-bg-input);
+}
+
+/* =============================
+   CLIENT
+============================= */
+
+.last-requests-client-cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.last-requests-client-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.last-requests-client-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.last-requests-client-name {
+  font-weight: 500;
+}
+
+/* TYPE */
+
+.last-requests-type-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-light);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-primary);
+}
+
+
+/* TIME */
+
+.last-requests-time-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* alternating rows */
+
+/* .type-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+} */
+/* 
+.type-icon {
+  background: #e6eef7;
+  padding: 6px;
+  border-radius: 8px;
+  font-size: 12px;
+} */
+ 
+/* .type-text {
+  font-size: 13px;
+  color: #6b7c93;
+} */
+/* 
+.requests-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+.type-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #e6eef7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2E4F73;
+}
+
+.time-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+} */

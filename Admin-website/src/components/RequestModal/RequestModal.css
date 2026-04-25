@@ -1,0 +1,163 @@
+/* ===== Modal ===== */
+
+.requests-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.requests-modal {
+  width: 520px;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  padding: 12px;
+}
+
+.requests-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.requests-close-btn {
+  border: none;
+  background: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.requests-section {
+  margin-top: 12px;
+}
+
+.requests-grid {
+  display: flex;
+  gap: 8px;
+}
+
+.requests-card {
+  flex: 1;
+  min-height: 20px;
+  background: #F8FAFC; 
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+  border: none;
+  text-align: center;
+}
+
+.requests-address-card {
+  margin-top: 10px;
+  background: #F8FAFC; 
+  padding: 12px;
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*  الزرار gradient */
+.requests-map-btn {
+  background: linear-gradient(135deg, #274C77, #A3CEF1);
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+/* hover خفيف */
+.requests-map-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===== Timeline ===== */
+.requests-timeline {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.requests-timeline-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.requests-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.requests-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.requests-time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.requests-time svg {
+  width: 16px;
+  height: 16px;
+}
+
+.requests-timeline-row.pending {
+  color: var(--color-text-muted);
+}
+/* ===== Typography Fix (تهدئة الخط) ===== */
+
+/* العنوان الرئيسي */
+.requests-modal-header h3 {
+  font-weight: 500;
+  color: var(--color-text-main);
+}
+
+/* عنوان السيكشن */
+.requests-section h4 {
+  font-weight: 500;
+  font-size: var(--text-md);
+  color: var(--color-text-main);
+}
+
+/* النص الصغير (labels) */
+.requests-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+/* القيم */
+.requests-card strong {
+  font-size: var(--text-md);
+  font-weight: 500;
+  color: var(--color-text-main);
+}
+
+/* address */
+.requests-address-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+.requests-address-card strong {
+  font-weight: 500;
+}
+
+/* timeline text */
+.requests-left span {
+  font-weight: 400;
+  color: var(--color-text-main);
+}

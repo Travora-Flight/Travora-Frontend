@@ -1,0 +1,77 @@
+/* container */
+.refunds-header {
+  margin-bottom: 20px;
+}
+
+/* title */
+.refunds-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.refunds-sub {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* stats */
+.refunds-stats {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* card */
+.refunds-stat-card {
+  flex: 1;
+  background: #FFFFFF;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+
+  padding: 16px;
+  height: 120px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* text */
+.refunds-stat-card span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.refunds-stat-card h3 {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+/* icons */
+.refunds-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* colors */
+.refunds-icon.pending {
+  background: #FEF3C6;
+  color: #d97706;
+}
+
+.refunds-icon.approved {
+  background: #DCFCE7;
+  color: #16a34a;
+}
+
+.refunds-icon.rejected {
+  background: #FFE2E2;
+  color: #dc2626;
+}

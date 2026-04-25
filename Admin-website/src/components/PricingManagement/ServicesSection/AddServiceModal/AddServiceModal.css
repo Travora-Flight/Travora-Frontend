@@ -1,0 +1,78 @@
+.add-service-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.15);
+  backdrop-filter: blur(2px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.add-service-modal-box {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  width: 420px;
+}
+
+.add-service-form {
+  margin-top: 12px;
+}
+
+.add-service-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.add-service-input-group label {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.add-service-input-group input,
+.add-service-input-group select,
+.add-service-input-group textarea {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #d6dde6;
+}
+
+.add-service-row {
+  display: flex;
+  gap: 10px;
+}
+
+.add-service-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.add-service-cancel-btn {
+  border: 1px solid #2f4f73;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-service-save-btn {
+  background: linear-gradient(to right, #2f4f73, #6fa3d1);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-service-error {
+  color: red;
+  font-size: 11px;
+  margin-top: 4px;
+}

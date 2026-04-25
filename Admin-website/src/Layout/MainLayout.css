@@ -1,0 +1,204 @@
+/* =================================
+الهيكل العام للصفحة
+================================= */
+
+.layout {
+  display: flex;
+  background: #F5F4F9 ;
+  min-height: 100vh;
+}
+
+/* =================================
+المحتوى الرئيسي
+================================= */
+
+.layout-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  /* حركة الصفحة لما السايدبار يفتح */
+  transition: margin-right 0.3s ease;
+}
+
+/* لما السايدبار يفتح */
+.layout-main.shifted {
+  margin-right: 240px;
+}
+
+/* جسم الصفحة */
+.layout-body {
+  padding: 10px 30px;
+}
+
+/* =================================
+Topbar
+================================= */
+
+.topbar {
+  height: 70px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e6e6e6;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px;
+}
+
+/* لوجو النافبار */
+
+.topbar-logo {
+  height: 35px;
+}
+
+/* الجزء اليمين */
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* زر تسجيل الخروج */
+
+.logout-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* زر القائمة */
+
+.menu-btn {
+  width: 35px;
+  height: 35px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #274C77;
+  color: white;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+/* =================================
+Sidebar
+================================= */
+
+.sidebar {
+  position: fixed;
+
+  right: 0;
+  top: 0;
+
+  width: 240px;
+  height: 100vh;
+
+  /* z-index: 9999; */
+  background: #ffffff;
+
+  border-left: 1px solid #e6e6e6;
+
+  transition: transform 0.3s ease;
+}
+
+/* السايدبار مقفول */
+
+.sidebar.closed {
+  transform: translateX(100%);
+}
+
+/* السايدبار مفتوح */
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* =================================
+لوجو السايدبار
+================================= */
+
+.sidebar-logo {
+  padding: 20px 25px 10px 25px;
+}
+
+.sidebar-logo img {
+  width: 120px;
+}
+
+/* =================================
+قائمة السايدبار
+================================= */
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+/* عناصر القائمة
+
+.sidebar-menu li {
+  padding: 14px 25px;
+  cursor: pointer;
+
+  font-size: 15px;
+  color: #6b6b6b;
+} */
+
+
+/* عناصر القائمة */
+
+.sidebar-menu li {
+  list-style: none;
+}
+
+/* الروابط */
+
+.sidebar-menu a {
+  display: block;
+  padding: 14px 25px;
+
+  font-size: 15px;
+  color: #6b6b6b;
+
+  text-decoration: none;
+  position: relative;
+}
+
+/* Hover */
+
+.sidebar-menu a:hover {
+  background: #f5f7fa;
+}
+
+/* العنصر النشط */
+
+.sidebar-menu a.active {
+  color: #274C77;
+  font-weight: 500;
+}
+
+/* الخط الأزرق */
+
+.sidebar-menu a.active::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 4px;
+  height: 100%;
+
+  background: #274C77;
+  border-radius: 0 3px 3px 0;
+}

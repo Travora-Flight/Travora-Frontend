@@ -1,0 +1,31 @@
+/* =============================
+   Weekly Activity Chart
+============================= */
+
+.dashboard-weekly-chart {
+  width: 100%;
+  height: 250px;
+}
+
+.recharts-wrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.recharts-bar-rectangle path {
+  border-radius: var(--radius-md);
+}
+
+.recharts-tooltip-wrapper {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.recharts-legend-wrapper {
+  margin-top: var(--space-sm);
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-size: var(--text-sm);
+  fill: var(--color-text-secondary);
+}

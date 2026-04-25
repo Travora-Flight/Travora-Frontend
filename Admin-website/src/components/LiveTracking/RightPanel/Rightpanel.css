@@ -1,0 +1,142 @@
+/* ===== Map Wrapper ===== */
+.live-tracking-map-container {
+  position: relative;
+  height: 100%;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+/* ===== Fix Leaflet Popup ===== */
+.leaflet-popup-content {
+  margin: 0 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  padding: 8px !important;
+  border-radius: var(--radius-lg);
+}
+
+/* ===== Popup ===== */
+.live-tracking-map-popup {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  min-width: 200px;
+}
+
+/* Header */
+.live-tracking-popup-header {
+  margin-bottom: 4px;
+}
+
+.live-tracking-popup-header h4 {
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+/* ID */
+.live-tracking-emp-id {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+/* ===== Status ===== */
+.live-tracking-popup-status {
+  display: inline-block;
+  margin: 6px 0;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+}
+
+.live-tracking-popup-status.available {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+
+.live-tracking-popup-status.onService {
+  background: var(--color-info-bg);
+  color: var(--color-info);
+}
+
+/* ===== Service ===== */
+.live-tracking-popup-service {
+  background: var(--color-bg-input);
+  padding: 8px;
+  border-radius: var(--radius-md);
+  font-size: 12px;
+  margin: 6px 0;
+  color: var(--color-primary);
+}
+
+/* ===== Info ===== */
+.live-tracking-popup-info p {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin: 3px 0;
+}
+
+/* ===== Legend ===== */
+.live-tracking-map-legend {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: var(--color-bg-card);
+  padding: 12px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(6px);
+  font-size: 13px;
+  z-index: 9999;
+}
+
+.live-tracking-map-legend h4 {
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+/* الكارد */
+.live-tracking-map-legend {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: var(--color-bg-card);
+  padding: 12px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  font-size: 13px;
+  z-index: 9999;
+}
+
+/* العنوان */
+.live-tracking-map-legend h4 {
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+/* كل سطر */
+.live-tracking-legend {
+  margin: 6px 0;
+  font-size: 13px;
+  position: relative;
+  padding-left: 16px;
+}
+
+/* النقطة */
+.live-tracking-legend::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* الألوان */
+.live-tracking-legend.available::before {
+  background: var(--color-success);
+}
+
+.live-tracking-legend.onService::before {
+  background: var(--color-info);
+}
