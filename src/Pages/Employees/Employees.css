@@ -1,9 +1,0 @@
-/* ============================= */
-/* 🔹 PAGE */
-/* ============================= */
-
-.employees-page-container {
-  padding: 20px 40px;
-  background: var(--color-bg-page);
-  min-height: 100vh;
-}
